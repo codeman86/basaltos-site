@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="BasaltOS is a hardened Linux OS based on Debian stable, with Strata Desktop and Core and Server editions.">
+  <meta name="theme-color" content="#070b0e">
+  <title>BasaltOS</title>
+  <link rel="icon" href="assets/basaltos-icon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <a class="skip" href="#content">Skip to content</a>
+  <header class="site-header">
+    <a class="brand" href="index.html">
+      <img src="assets/basaltos-icon.svg" width="36" height="36" alt="">
+      <span class="wordmark"><span class="w-basalt">Basalt</span><span class="w-os">OS</span></span>
+    </a>
+    <nav aria-label="Primary">
+      <ul>
+        <li><a href="index.html" aria-current="page">Home</a></li>
+        <li><a href="features.html">Features</a></li>
+        <li><a href="editions.html">Editions</a></li>
+        <li><a href="download.html">Download</a></li>
+        <li><a href="roadmap.html">Roadmap</a></li>
+        <li><a href="about.html">About</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main id="content">
+    <div class="wrap">
+      <section class="hero home-hero">
+        <img class="hero-mark" src="assets/basaltos-icon.svg" width="148" height="148" alt="">
+        <h1><span class="w-basalt">Basalt</span><span class="w-os">OS</span></h1>
+        <p class="lede">A hardened Linux OS based on Debian stable, with the Strata desktop and a full server edition.</p>
+        <div class="actions">
+          <a class="button button-primary" href="download.html">Download</a>
+          <a class="button button-quiet" href="features.html">Learn more</a>
+        </div>
+      </section>
+
+      <ul class="facts">
+        <li><span>Base</span> Debian stable</li>
+        <li><span>Desktop</span> Strata on labwc</li>
+        <li><span>Editions</span> Core and Server</li>
+        <li><span>Images</span> amd64 ISOs</li>
+      </ul>
+
+      <section class="section" aria-labelledby="editions-title">
+        <div class="section-head">
+          <p class="eyebrow">Editions</p>
+          <h2 id="editions-title">Core for a bare base. Server for the full system.</h2>
+          <p>Both images are hardened Debian stable for amd64. Each ISO is published with a SHA256SUMS file.</p>
+        </div>
+        <div class="grid-2">
+          <article class="card card-core">
+            <div class="card-body">
+              <p class="kicker">Core</p>
+              <h3>Manual configuration</h3>
+              <p>The bare hardened Debian base. No web admin UI and no add-ons.</p>
+              <p class="iso">basaltos-1.0-core-amd64.iso</p>
+              <p><a href="editions.html">Compare editions</a></p>
+            </div>
+          </article>
+          <article class="card card-server">
+            <div class="card-body">
+              <p class="kicker">Server</p>
+              <h3>Full edition</h3>
+              <p>Strata Desktop and the web admin UI, on the same hardened base.</p>
+              <p class="iso">basaltos-1.0-server-amd64.iso</p>
+              <p><a href="download.html">Get the images</a></p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section" aria-labelledby="strata-title">
+        <div class="section-head">
+          <p class="eyebrow">Strata Desktop</p>
+          <h2 id="strata-title">A Wayland desktop with the BasaltOS mark on it.</h2>
+          <p>labwc underneath. Branded boot and login, a logo start button, wallpapers, and a tray.</p>
+        </div>
+        <div class="mosaic">
+          <article class="card">
+            <img class="shot" src="assets/basaltos-login-screen.png" alt="BasaltOS login screen on the teal hex wallpaper, with the cube mark, the time, a username field, a session menu, and a teal Log in button.">
+            <div class="card-body">
+              <h3>Login and boot</h3>
+              <p>The splash and the greeter use the same mark, wordmark, and teal field.</p>
+              <p><a href="features.html#boot">Boot and login</a></p>
+            </div>
+          </article>
+          <article class="card">
+            <img class="shot" src="assets/basaltos-logo-start-button.png" alt="Strata start menu open from the BasaltOS logo button, with app search, an application list, and Lock, Log out, Restart, and Shut down.">
+            <div class="card-body">
+              <h3>Logo start menu</h3>
+              <p>Sort A to Z, Z to A, or a custom drag order. Categories is optional.</p>
+              <p><a href="features.html#menu">Start menu</a></p>
+            </div>
+          </article>
+          <article class="card">
+            <img class="shot" src="assets/basaltos-desktop-m2.png" alt="Strata Desktop with the BasaltOS wallpaper, a top bar, and notification cards along the right edge, including an updates notice.">
+            <div class="card-body">
+              <h3>Tray and notifications</h3>
+              <p>Clock and status in the bar. Notices sit on the desktop.</p>
+              <p><a href="features.html#tray">Notifications</a></p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section" aria-labelledby="next-title">
+        <div class="section-head">
+          <p class="eyebrow">Roadmap</p>
+          <h2 id="next-title">Planned, and still Debian stable.</h2>
+          <p>An app store, a first-login welcome, update choices, an NVIDIA helper, and more. The base stays on Debian stable.</p>
+        </div>
+        <p class="callout">BasaltOS is Debian stable. It is not a rolling release. <a href="roadmap.html">Read the roadmap</a></p>
+      </section>
+    </div>
+  </main>
+  <footer class="site-footer">
+    <div class="wrap">
+      <p class="wordmark"><span class="w-basalt">Basalt</span><span class="w-os">OS</span></p>
+      <p>Built by Cody Hadley</p>
+      <ul class="footer-links">
+        <li><a href="https://github.com/codeman86">GitHub</a></li>
+        <li><a href="https://github.com/codeman86/basaltos-site/releases">Releases</a></li>
+        <li><a href="download.html">Download</a></li>
+      </ul>
+      <p class="fine">Debian stable. Not a rolling release.</p>
+    </div>
+  </footer>
+</body>
+</html>

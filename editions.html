@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="BasaltOS Core is the bare hardened Debian base. BasaltOS Server is the full edition with Strata Desktop and a web admin UI.">
+  <meta name="theme-color" content="#070b0e">
+  <title>Editions · BasaltOS</title>
+  <link rel="icon" href="assets/basaltos-icon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <a class="skip" href="#content">Skip to content</a>
+  <header class="site-header">
+    <a class="brand" href="index.html">
+      <img src="assets/basaltos-icon.svg" width="36" height="36" alt="">
+      <span class="wordmark"><span class="w-basalt">Basalt</span><span class="w-os">OS</span></span>
+    </a>
+    <nav aria-label="Primary">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="features.html">Features</a></li>
+        <li><a href="editions.html" aria-current="page">Editions</a></li>
+        <li><a href="download.html">Download</a></li>
+        <li><a href="roadmap.html">Roadmap</a></li>
+        <li><a href="about.html">About</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main id="content">
+    <div class="wrap">
+      <section class="hero">
+        <p class="eyebrow">Editions</p>
+        <h1>Core and Server</h1>
+        <p class="lede">One hardened Debian base, two images. Core is for manual configuration. Server is the full edition.</p>
+      </section>
+
+      <div class="table-wrap">
+        <table>
+          <caption>What each edition includes</caption>
+          <thead>
+            <tr>
+              <th scope="col">Feature</th>
+              <th scope="col">Core</th>
+              <th scope="col">Server</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">Role</th>
+              <td>Bare base for manual configuration</td>
+              <td>Full edition</td>
+            </tr>
+            <tr>
+              <th scope="row">Base</th>
+              <td>Hardened Debian stable, amd64</td>
+              <td>Hardened Debian stable, amd64</td>
+            </tr>
+            <tr>
+              <th scope="row">Web admin UI</th>
+              <td>No</td>
+              <td>Yes</td>
+            </tr>
+            <tr>
+              <th scope="row">Add-ons</th>
+              <td>None</td>
+              <td>Part of the full edition. Community add-ons are planned.</td>
+            </tr>
+            <tr>
+              <th scope="row">Strata Desktop</th>
+              <td>Not included</td>
+              <td>Included. Wayland session on labwc.</td>
+            </tr>
+            <tr>
+              <th scope="row">ISO</th>
+              <td><span class="iso">basaltos-1.0-core-amd64.iso</span></td>
+              <td><span class="iso">basaltos-1.0-server-amd64.iso</span></td>
+            </tr>
+            <tr>
+              <th scope="row">Checksum</th>
+              <td>SHA256SUMS, published with the ISO</td>
+              <td>SHA256SUMS, published with the ISO</td>
+            </tr>
+            <tr>
+              <th scope="row">Release model</th>
+              <td>Debian stable. Not a rolling release.</td>
+              <td>Debian stable. Not a rolling release.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="grid-2 split">
+        <article class="card card-core">
+          <div class="card-body">
+            <p class="kicker">Core</p>
+            <h2>Configure it yourself</h2>
+            <p>Core is the hardened Debian base with no web admin UI and no add-ons. Use it when you want to build the system up by hand.</p>
+            <p><a class="button button-quiet" href="download.html">Core download</a></p>
+          </div>
+        </article>
+        <article class="card card-server">
+          <div class="card-body">
+            <p class="kicker">Server</p>
+            <h2>Desktop and web admin</h2>
+            <p>Server adds Strata Desktop and the web admin UI on that same base. This is the edition the screenshots on the Features page come from.</p>
+            <p><a class="button button-quiet" href="download.html">Server download</a></p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </main>
+  <footer class="site-footer">
+    <div class="wrap">
+      <p class="wordmark"><span class="w-basalt">Basalt</span><span class="w-os">OS</span></p>
+      <p>Built by Cody Hadley</p>
+      <ul class="footer-links">
+        <li><a href="https://github.com/codeman86">GitHub</a></li>
+        <li><a href="https://github.com/codeman86/basaltos-site/releases">Releases</a></li>
+        <li><a href="download.html">Download</a></li>
+      </ul>
+      <p class="fine">Debian stable. Not a rolling release.</p>
+    </div>
+  </footer>
+</body>
+</html>
