@@ -400,9 +400,6 @@ h2 {
   display: block;
   width: 100%;
   height: auto;
-  aspect-ratio: 16 / 9;
-  object-fit: cover;
-  object-position: center;
   background: #0b1014;
   border-bottom: 1px solid var(--line);
 }
