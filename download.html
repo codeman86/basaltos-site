@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Download BasaltOS 1.0 Core and Server amd64 ISOs. Images and SHA256SUMS files will be published on this site's GitHub Releases.">
+  <meta name="theme-color" content="#070b0e">
+  <title>Download · BasaltOS</title>
+  <link rel="icon" href="assets/basaltos-icon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <a class="skip" href="#content">Skip to content</a>
+  <header class="site-header">
+    <a class="brand" href="index.html">
+      <img src="assets/basaltos-icon.svg" width="36" height="36" alt="">
+      <span class="wordmark"><span class="w-basalt">Basalt</span><span class="w-os">OS</span></span>
+    </a>
+    <nav aria-label="Primary">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="features.html">Features</a></li>
+        <li><a href="editions.html">Editions</a></li>
+        <li><a href="download.html" aria-current="page">Download</a></li>
+        <li><a href="roadmap.html">Roadmap</a></li>
+        <li><a href="about.html">About</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main id="content">
+    <div class="wrap">
+      <section class="hero">
+        <p class="eyebrow">Download</p>
+        <h1>Downloads</h1>
+        <p class="lede">Two amd64 ISOs. Each one is published with a SHA256SUMS file. Nothing is attached to Releases yet.</p>
+      </section>
+
+      <div class="status" role="status">
+        <p class="badge">Coming soon</p>
+        <p>The buttons open this site's Releases page. When an image is published, it will be there with its SHA256SUMS file.</p>
+      </div>
+
+      <div class="grid-2">
+        <article class="card card-core" id="core">
+          <div class="card-body">
+            <p class="kicker">Core</p>
+            <h2>basaltos-1.0-core-amd64.iso</h2>
+            <p>Bare hardened Debian base. No web admin UI and no add-ons.</p>
+            <p class="iso">SHA256SUMS</p>
+            <p><a class="button button-soon" href="https://github.com/codeman86/basaltos-site/releases">Coming soon <span class="button-sub">Releases</span></a></p>
+          </div>
+        </article>
+        <article class="card card-server" id="server">
+          <div class="card-body">
+            <p class="kicker">Server</p>
+            <h2>basaltos-1.0-server-amd64.iso</h2>
+            <p>Full edition, with Strata Desktop and the web admin UI.</p>
+            <p class="iso">SHA256SUMS</p>
+            <p><a class="button button-soon" href="https://github.com/codeman86/basaltos-site/releases">Coming soon <span class="button-sub">Releases</span></a></p>
+          </div>
+        </article>
+      </div>
+
+      <section class="section" aria-labelledby="check-title">
+        <div class="section-head">
+          <p class="eyebrow">Checksums</p>
+          <h2 id="check-title">Check the file before you boot it</h2>
+          <p>Download the ISO and the SHA256SUMS file from the same release into one directory. The sums file names the ISO. If the check fails, do not boot that file.</p>
+        </div>
+        <div class="steps">
+          <p><strong>Linux, with GNU sha256sum</strong></p>
+          <pre><code>sha256sum -c SHA256SUMS</code></pre>
+          <p><strong>macOS</strong></p>
+          <pre><code>shasum -a 256 -c SHA256SUMS</code></pre>
+          <p>You can also print one digest and compare it to the matching line in SHA256SUMS:</p>
+          <pre><code>sha256sum basaltos-1.0-server-amd64.iso</code></pre>
+        </div>
+      </section>
+    </div>
+  </main>
+  <footer class="site-footer">
+    <div class="wrap">
+      <p class="wordmark"><span class="w-basalt">Basalt</span><span class="w-os">OS</span></p>
+      <p>Built by Cody Hadley</p>
+      <ul class="footer-links">
+        <li><a href="https://github.com/codeman86">GitHub</a></li>
+        <li><a href="https://github.com/codeman86/basaltos-site/releases">Releases</a></li>
+        <li><a href="download.html">Download</a></li>
+      </ul>
+      <p class="fine">Debian stable. Not a rolling release.</p>
+    </div>
+  </footer>
+</body>
+</html>
