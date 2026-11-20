@@ -642,3 +642,19 @@ code {
     scroll-behavior: auto;
   }
 }
+
+/* Background previews (?bg=a|b|c). No parameter keeps the current background. */
+html[data-bg="a"] body::before,
+html[data-bg="b"] body::before {
+  content: none;
+}
+
+html[data-bg="b"] body {
+  background: linear-gradient(180deg, #10201e 0%, #070b0e 48%, #14101c 100%);
+}
+
+html[data-bg="c"] body::before {
+  opacity: 1;
+  background-image: url("../assets/hex-faint.svg");
+  background-size: 126px 144px;
+}
