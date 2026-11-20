@@ -7,28 +7,6 @@
   <meta name="theme-color" content="#070b0e">
   <title>Roadmap · BasaltOS</title>
   <link rel="icon" href="assets/basaltos-icon.svg" type="image/svg+xml">
-  <script>
-    (function () {
-      var bg = new URLSearchParams(location.search).get("bg");
-      if (!/^[a-f]$/.test(bg || "")) return;
-      document.documentElement.setAttribute("data-bg", bg);
-      document.addEventListener("DOMContentLoaded", function () {
-        var links = document.querySelectorAll("a[href]");
-        for (var i = 0; i < links.length; i++) {
-          var href = links[i].getAttribute("href");
-          if (!href || href.charAt(0) === "#" || /^[a-z]+:/i.test(href)) continue;
-          var hash = "";
-          var cut = href.indexOf("#");
-          if (cut !== -1) {
-            hash = href.slice(cut);
-            href = href.slice(0, cut);
-          }
-          if (href.indexOf("bg=") !== -1) continue;
-          links[i].setAttribute("href", href + (href.indexOf("?") === -1 ? "?" : "&") + "bg=" + bg + hash);
-        }
-      });
-    })();
-  </script>
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>

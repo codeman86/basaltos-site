@@ -30,21 +30,12 @@ body {
   margin: 0;
   min-height: 100vh;
   color: var(--text);
-  background: var(--bg);
-  font: 16px/1.6 var(--font);
-}
-
-body::before {
-  content: "";
-  position: fixed;
-  inset: 0;
-  pointer-events: none;
+  background-color: var(--bg);
   background-image:
-    radial-gradient(ellipse 70% 42% at 50% -8%, rgba(57, 197, 177, 0.16), transparent 62%),
-    radial-gradient(ellipse 46% 32% at 50% 110%, rgba(139, 116, 255, 0.1), transparent 70%),
-    url("../assets/hex.svg");
-  background-size: auto, auto, 84px 96px;
-  opacity: 0.55;
+    repeating-linear-gradient(-28deg, transparent 0 22px, rgba(57, 197, 177, 0.055) 22px 23px),
+    radial-gradient(ellipse 55% 42% at 0% 0%, rgba(57, 197, 177, 0.14), transparent 68%),
+    radial-gradient(ellipse 48% 40% at 100% 100%, rgba(139, 116, 255, 0.12), transparent 70%);
+  font: 16px/1.6 var(--font);
 }
 
 .skip {
@@ -641,49 +632,4 @@ code {
   html {
     scroll-behavior: auto;
   }
-}
-
-/* Background previews (?bg=a through f). No parameter keeps the current background. */
-html[data-bg="a"] body::before,
-html[data-bg="b"] body::before,
-html[data-bg="d"] body::before,
-html[data-bg="e"] body::before,
-html[data-bg="f"] body::before {
-  content: none;
-}
-
-html[data-bg="b"] body {
-  background: linear-gradient(180deg, #10201e 0%, #070b0e 48%, #14101c 100%);
-}
-
-html[data-bg="c"] body::before {
-  opacity: 1;
-  background-image: url("../assets/hex-faint.svg");
-  background-size: 126px 144px;
-}
-
-html[data-bg="d"] body,
-html[data-bg="e"] body,
-html[data-bg="f"] body {
-  background-color: #070b0e;
-}
-
-html[data-bg="d"] body {
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='720' height='420' viewBox='0 0 720 420'%3E%3Cg fill='none' stroke-linecap='round'%3E%3Cpath stroke='%232f6a64' stroke-opacity='.38' stroke-width='1' d='M0 52C110 34 190 74 300 52S490 28 600 48 690 66 720 52'/%3E%3Cpath stroke='%23324a52' stroke-opacity='.5' stroke-width='1' d='M0 132C140 112 230 158 360 132S560 108 720 140'/%3E%3Cpath stroke='%23624f90' stroke-opacity='.32' stroke-width='1' d='M0 214C120 196 250 238 390 212S580 188 720 220'/%3E%3Cpath stroke='%232f6a64' stroke-opacity='.34' stroke-width='1' d='M0 300C150 282 240 328 400 302S590 276 720 308'/%3E%3Cpath stroke='%23324a52' stroke-opacity='.42' stroke-width='1' d='M0 386C100 370 220 404 340 384S540 362 720 392'/%3E%3C/g%3E%3C/svg%3E");
-  background-size: 720px 420px;
-}
-
-html[data-bg="e"] body {
-  background-image:
-    radial-gradient(circle, rgba(57, 197, 177, 0.2) 0.7px, transparent 0.85px),
-    radial-gradient(circle, rgba(139, 116, 255, 0.16) 0.7px, transparent 0.85px);
-  background-size: 36px 36px, 36px 36px;
-  background-position: 0 0, 18px 18px;
-}
-
-html[data-bg="f"] body {
-  background-image:
-    repeating-linear-gradient(-28deg, transparent 0 22px, rgba(57, 197, 177, 0.055) 22px 23px),
-    radial-gradient(ellipse 55% 42% at 0% 0%, rgba(57, 197, 177, 0.14), transparent 68%),
-    radial-gradient(ellipse 48% 40% at 100% 100%, rgba(139, 116, 255, 0.12), transparent 70%);
 }
