@@ -10,7 +10,7 @@
   <script>
     (function () {
       var bg = new URLSearchParams(location.search).get("bg");
-      if (bg !== "a" && bg !== "b" && bg !== "c") return;
+      if (!/^[a-f]$/.test(bg || "")) return;
       document.documentElement.setAttribute("data-bg", bg);
       document.addEventListener("DOMContentLoaded", function () {
         var links = document.querySelectorAll("a[href]");
